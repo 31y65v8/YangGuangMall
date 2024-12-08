@@ -1,0 +1,35 @@
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landr�               |
+|--------------------------------------------------*/
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #f0e68c; /* 灰色改为鹅黄色 */
+	white-space: nowrap;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #008000; /* 深灰色改为绿色 */
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #008000; /* 保持绿色 */
+	text-decoration: underline;
+	background-color: #ff7f00; /* 鼠标悬停时，节点背景色改为橙色 */
+}
+.dtree a.nodeSel {
+	background-color: #ff7f00; /* 浅蓝色改为橙色 */
+}
+.dtree .clip {
+	overflow: hidden;
+}

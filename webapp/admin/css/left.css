@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    text-align: left;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.left_list {
+    font-size: 14px;
+    margin-top: 20px;
+    padding-right: 12px;
+    display: block;
+    width: 160px; /* 修改宽度为更适合导航栏 */
+    height: 35px; /* 调整高度 */
+    line-height: 35px; /* 使文本垂直居中 */
+    border-bottom: 1px dotted #A8D5BA; /* 使用浅绿色的虚线边框 */
+    color: #006400; /* 绿色文字 */
+    text-align: center;
+    font-family: "Microsoft YaHei", sans-serif; /* 使用更常见的中文字体 */
+    background-color: #D9F0D3; /* 浅绿色背景 */
+    border-radius: 5px; /* 圆角效果 */
+}
+
+.left_list:hover {
+    background-color: #228B22; /* 鼠标悬停时背景色为绿色 */
+    color: white; /* 鼠标悬停时文字变为白色 */
+    border-bottom-color: #006400; /* 修改悬停时底部边框颜色 */
+}
+
+.left_list:active {
+    background-color: #004d00; /* 点击时背景色为更深的绿色 */
+}

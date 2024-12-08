@@ -1,0 +1,152 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #006400;  /* 深绿色 */
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #A8D5BA;  /* 浅绿色背景 */
+    border: 1px solid #A9DFBF;  /* 浅绿色边框 */
+    width: 1000px;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #A8D5BA;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #228B22;  /* 绿色 */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #006400;  /* 深绿色 */
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #A8D5BA;  /* 浅绿色边框 */
+}
+
+th {
+    background-color: #A8D5BA;  /* 浅绿色 */
+    color: #006400;  /* 深绿色 */
+}
+
+td {
+    background-color: #D9F0D3;  /* 浅绿色背景 */
+}
+
+td a {
+    color: #006400;  /* 深绿色 */
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+    color: #228B22;  /* 绿色 */
+}
+
+.c-message {
+    color: #FF0000;  /* 红色 */
+    text-align: center;
+    font-weight: bold;
+}
+
+.box04, .box01 {
+    background-color: #A8D5BA;  /* 浅绿色 */
+    border: 1px solid #A9DFBF;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box05, .box06 {
+    background-color: #FFFFE0;  /* 淡黄色 */
+    border: 1px solid #D9F0D3;
+    padding: 10px;
+}
+
+.bottom {
+    color: #006400;
+    font-size: 12px;
+    text-align: center;
+}
+
+.top {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #A8D5BA;  /* 浅绿色 */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.ta_01 {
+    padding: 8px;
+    background-color: #FBFDFF;
+}
+
+.bg {
+    border-bottom: 1px solid #FFFFE0;  /* 淡黄色 */
+    height: 21px;
+    width: 150px;
+}
+h1 {
+    font-size: 24px;
+    color: #006400; /* 深绿色 */
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #006400; /* 深绿色 */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-green {
+    background-color: green;  /* 绿色背景 */
+    color: white;  /* 白色文字 */
+    border: none;  /* 去掉边框 */
+    padding: 10px 20px;  /* 设置按钮的内边距 */
+    font-size: 16px;  /* 设置字体大小 */
+    cursor: pointer;  /* 设置鼠标悬停时为指针样式 */
+    border-radius: 5px;  /* 设置按钮圆角 */
+}
+
+.button-green:hover {
+    background-color: darkgreen;  /* 鼠标悬停时变为深绿色 */
+}
+    

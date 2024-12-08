@@ -1,0 +1,577 @@
+body {
+    background-color: #FF6600; /* 橙色背景 */
+    color: #000000; /* 黑色字体 */
+}
+
+.main {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+    background: #FFFFFF; /* 白色背景 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #000000; /* 黑色字体 */
+    text-align: center;
+    vertical-align: top;
+}
+
+a {
+    font-size: 12px;
+    color: #FF6600; /* 橙色链接 */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #FF6600; /* 橙色 */
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF9933; /* 鼠标悬停时的橙色渐变 */
+}
+
+a:active {
+    text-decoration: none;
+    color: #FF6600; /* 橙色 */
+}
+
+td {
+    vertical-align: top;
+    text-align: left;
+    font-size: 12px;
+}
+
+hr {
+    color: #CCCCCC;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 14px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline;
+}
+
+.bookname {
+    font-size: 16px;
+    color: #194105;
+    text-align: left;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+#divhead {
+    width: 100%;
+}
+
+.headtable {
+    width: 100%;
+}
+
+.headtable td {
+    padding: 10px 50px 25px 135px;
+}
+
+#divmenu {
+    width: 100%;
+    border-top-width: 4px;
+    border-top-style: solid;
+    border-top-color: #FFA500;
+    background-color: #FFFFFF; /* 白色背景 */
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 14px;
+}
+
+#divmenu a {
+    font-size: 14px;
+    color: #000000; /* 黑色文字 */
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+}
+
+#divmenu a:link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#divmenu a:visited {
+    text-decoration: none;
+    color: #000000; /* 黑色 */
+    font-weight: bold;
+}
+
+#divmenu a:hover {
+    text-decoration: none;
+    color: #FF6600; /* 橙色 */
+    font-weight: bold;
+}
+
+#divmenu a:active {
+    text-decoration: none;
+    color: #000000; /* 黑色 */
+    font-weight: bold;
+}
+
+#divsearch {
+    width: 100%;
+    background-color: #f59f1d;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#divad {
+    width: 900px;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+
+#divcontent {
+    width: 900px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+
+#divpagecontent {
+    width: 900px;
+    margin-top: 10px;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+
+.listtitle {
+    padding: 5px 0px 5px 5px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1C3F09;
+}
+
+.listtd {
+    padding: 5px 0px 5px 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCCCCC;
+}
+
+.listcontent {
+    background-color: #FCFDEF;
+    border: 1px solid #CCCCCC;
+    margin-left: 5px;
+    width: 99%;
+}
+
+.listcontent td {
+    padding: 20px;
+}
+
+.infocontent {
+    background-color: #FCFDEF;
+    border: 1px solid #CCCCCC;
+    margin-left: 5px;
+    width: 99%;
+}
+
+.infocontent td {
+    padding: 5px;
+}
+
+.booklist {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.booklist td {
+    width: 25%;
+    margin: 0px;
+    padding:10px 0 10px 40px;
+}
+
+.divbookpic {
+    width: 131px;
+    height: 145px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    margin-bottom: 8px;
+    overflow: hidden;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.divbookpic img {
+    position: static;
+    position: relative;
+    top: 5%;
+}
+
+.divbookcover {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #F3F2DE;
+    background-color: #FFFFFF;
+    margin: 8px;
+    overflow: hidden;
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.divbookcover img {
+    position: static;
+    position: relative;
+    top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.divlisttitle {
+    line-height: 120%;
+    text-align:left;
+}
+
+#divfoot {
+    width: 100%;
+    clear: both;
+    background-color: #efefef;
+    margin-top: 15px;
+}
+
+.ctl {
+    width: 490px;
+    margin-top: 2px;
+    margin-left: 2px;
+    table-layout: fixed;
+}
+
+.ctl td {
+    text-align: left;
+    padding: 3px;
+}
+
+.inputtable {
+    width: 130px;
+    height: 18px;
+    border: 1px solid #999999;
+}
+
+.inputbutton {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 1px;
+    border: 1px solid #999999;
+}
+
+/*分页*/
+.pagination {
+    padding: 5px;
+    width: 790px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.pagination ul {
+    width:300px;
+    margin: 5px auto;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.pagination li {
+    list-style-type: none;
+    float:left;
+    padding: 1px;
+    margin: 1px;
+}
+
+.pagination a,.pagination a:visited {
+    padding:5px;
+    border: 1px solid #9aafe5;
+    text-decoration: none;
+    color: #2e6ab1;
+}
+
+.pagination li.currentpage {
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid navy;
+    background-color: #2e6ab1;
+    color: #FFF;
+}
+
+.disablepage_a{
+    display:block; 
+    width:75px; 
+    height:15px;
+}
+
+.disablepage_a:link,
+.disablepage_a:visited {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.disablepage_a:hover {
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+}
+
+.pagination li.disablepage_p {
+    width: 75px;
+    height: 15px;
+    padding: 5px;
+    color: #929292;
+    background:url(../images/previous_page.png) no-repeat center center;
+}
+
+.pagination li.disablepage_p2 {
+    width: 75px;
+    height: 15px;
+    padding: 5px;
+    color: #929292;
+    background:url(../images/previous_page2.png) no-repeat center center;
+}
+
+.pagination li.disablepage_n{    
+    width: 75px;
+    padding: 5px;
+    color: #929292;
+    background:url(../images/next_page.png) no-repeat center center;
+}
+
+.pagination li.disablepage_n2{    
+    width: 75px;
+    height: 15px;
+    padding: 5px;
+    color: #929292;background:url(../images/next_page2.png) no-repeat center center;
+}
+
+.pagination li.nextpage {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/*分页*/
+.upline {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #B0BEC7;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 20px;
+}
+
+.textinput {
+    margin-left: 10px;
+    font-size: 12px;
+    width: 150px;
+    height: 18px;
+    border: 1px solid #A4B5BD;
+}
+
+.textarea {
+    margin-left: 10px;
+    font-size: 12px;
+    width: 350px;
+    height: 75px;
+    border: 1px solid #A4B5BD;
+}
+
+#logindiv {
+    background-image: url(../images/登录背景.jpg);
+    width: 305px;
+    height: 361px;
+    background-repeat: no-repeat;
+    background-size: cover; /* 使背景图填充容器 */
+    margin: 20px;
+}
+
+.carttable {
+    border: 1px solid #FFFFFF;  /* 设置边框为白色 */
+    width: 100%;
+    background-color: #FFFFFF;  /* 设置背景色为白色 */
+}
+
+
+.tableopen {
+    text-align: center;
+}
+
+.tableopentd01 {
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    padding: 3px;
+    color: #FFFFFF;
+}
+
+.tableopentd02 {
+    text-align: center;
+    padding: 3px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-top-color: #C5E0E2;
+    border-right-color: #C5E0E2;
+    border-bottom-color: #C5E0E2;
+    border-left-color: #C5E0E2;
+}
+
+.tableopentd03 {
+    text-align: center;
+    padding: 3px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-left-style: none;
+    border-top-color: #C5E0E2;
+    border-right-color: #C5E0E2;
+    border-bottom-color: #C5E0E2;
+    border-left-color: #C5E0E2;
+}
+
+.searchtable {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+}
+/* 按钮样式 */
+#searchButton {
+    background-color: #fff;  /* 按钮背景为白色 */
+    color: #000;  /* 文本颜色为黑色 */
+    font-size: 12px;  /* 字体大小 */
+    padding: 2px 13px;  /* 按钮的内边距，左右16px，上下8px */
+    border: 2px solid #000;  /* 边框为黑色 */
+    cursor: pointer;  /* 鼠标悬停时变为手形 */
+    text-align: center;  /* 文本居中 */
+    font-family: Arial, sans-serif;  /* 字体样式 */
+}
+
+/* 鼠标悬停时按钮样式变化 */
+#searchButton:hover {
+    background-color: #f0f0f0;  /* 悬停时按钮背景变为浅灰色 */
+    border-color: #333;  /* 悬停时边框变为深灰色 */
+}
+.product-item {
+    background-color: #fff;
+    border: 2px solid #00008b; /* 深蓝色边框 */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #FFA500; /* 橙色 */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-to-cart:hover {
+    background-color: #FF8C00; /* 深橙色 */
+}
+
+#pagination {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#pagination a {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#pagination a:hover {
+    background-color: #FFA500;
+    color: white;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 默认每行 4 个商品 */
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid white; /* 设置商品的边框为白色 */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8; /* 可以选择设置背景色让商品框更突出 */
+}
+
+.product-item img {
+    width: 115px; /* 限制图片宽度为 115px */
+    height: 129px; /* 限制图片高度为 129px */
+    object-fit: cover; /* 保证图片不变形，超出的部分会被裁剪 */
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #f00;
+}
+
+@media (max-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr); /* 屏幕宽度小于 1200px 时，每行 3 个商品 */
+    }
+}
+
+@media (max-width: 800px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); /* 屏幕宽度小于 800px 时，每行 2 个商品 */
+    }
+}
+
+@media (max-width: 500px) {
+    .product-list {
+        grid-template-columns: 1fr; /* 屏幕宽度小于 500px 时，每行 1 个商品 */
+    }
+}
+
