@@ -7,9 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.wxl.ygmall.domain.PageBean;
 import org.wxl.ygmall.service.ProductService;
-/**
- * 前台页面，用于菜单栏下面搜索功能的servlet
- */
+
 public class MenuSearchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -18,13 +16,13 @@ public class MenuSearchServlet extends HttpServlet {
 	}
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		// 1.定义当前页码，默认为1
+		// 定义当前页码，默认为1
 		int currentPage = 1;
 		String _currentPage = req.getParameter("currentPage");
 		if (_currentPage != null) {
 			currentPage = Integer.parseInt(_currentPage);
 		}
-		// 2.定义每页显示条数,默认为4
+		// 定义每页显示条数
 		int currentCount = 4;	
 		//获取前台页面搜索框输入的值
 		String searchfield = req.getParameter("textfield");
