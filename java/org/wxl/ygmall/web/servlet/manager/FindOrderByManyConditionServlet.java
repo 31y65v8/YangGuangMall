@@ -8,11 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.wxl.ygmall.domain.Order;
 import org.wxl.ygmall.service.OrderService;
-/**
- * 按条件查询订单
- * @author admin
- *
- */
+//按条件查询订单
 public class FindOrderByManyConditionServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
