@@ -16,21 +16,15 @@ public class MyAccountServlet extends HttpServlet {
 	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/**
-		 * 点击前台系统中的【我的账户】，分以下两种情况：
-		 * 1、用户未登录，进入登录页面
-		 * 2、用户已登录
-		 *   a、超级用户，进入到后台系统
-		 *   b、普通用户，登录到我的账户
-		 */
+		
 		//在session中查找名为“user”的会话
 		User user = (User) request.getSession().getAttribute("user");
-		//如果找到没有名为“user”的会话，说明用户没有登录，此时跳转到登录页面
+		//如果没有找到，跳转到登录页面
 		if (user == null) {
 			response.sendRedirect(request.getContextPath() + "/client/login.jsp");
 			return;
 		}
-		//如果是管理员，进入到网上书城后台管理系统；否则进入到普通用户的账户信息页面
+		//如果是管理员，进入后台管理系统；如果是用户进入个人中心。
 		if ("管理员".equals(user.getRole())) {
 			response.sendRedirect(request.getContextPath() + "/admin/login/home.jsp");
 //			return;
