@@ -21,10 +21,7 @@ import org.wxl.ygmall.domain.Product;
 import org.wxl.ygmall.service.ProductService;
 import org.wxl.ygmall.utils.FileUploadUtils;
 
-/**
- * 后台系统
- * 用于编辑商品信息的servlet
- */
+ //用于编辑商品信息的servlet
 public class EditProductServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
