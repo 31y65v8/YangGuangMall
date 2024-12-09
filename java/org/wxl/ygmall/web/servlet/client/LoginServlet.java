@@ -19,15 +19,15 @@ public class LoginServlet extends HttpServlet {
 	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// 1.获取登录页面输入的邮箱与密码
+		// 获取登录页面输入的邮箱与密码
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-		// 2.调用service完成登录操作。
+		// 调用service登录操作。
 		UserService service = new UserService();
 		try {
 			User user = service.login(email, password);
 			
-			// 3.登录成功，将用户存储到session中.
+			// 登录成功，将用户存储到session中.
 			request.getSession().setAttribute("user", user);
 			// 打印session中的用户邮箱
 	        User sessionUser = (User) request.getSession().getAttribute("user");
@@ -36,10 +36,10 @@ public class LoginServlet extends HttpServlet {
 	        } else {
 	            System.out.println("No user found in session.");
 	        }
-			// 获取用户的角色，其中用户的角色分用户（普通用户）和管理员（超级用户）两种
+			// 获取用户的角色，其中用户的角色分普通用户和管理员
 			String role = user.getRole();
 			System.out.println("user login role: " + role);
-			// 如果是管理员（超级用户），就进入到网上书城的后台管理系统；否则进入我的账户页面
+			// 如果是管理员，就进入到网上书城的后台管理系统；否则进入我的账户页面
 			if ("管理员".equals(role)) {
 				response.sendRedirect(request.getContextPath() + "/admin/login/home.jsp");
 				return;
