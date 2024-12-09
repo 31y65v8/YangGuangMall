@@ -26,10 +26,7 @@ import org.wxl.ygmall.service.ProductService;
 import org.wxl.ygmall.utils.FileUploadUtils;
 import org.wxl.ygmall.utils.IdUtils;
 
-/**
- * 后台系统
- * 删除商品信息的servlet
- */
+//删除商品
 public class DeleteProductServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
