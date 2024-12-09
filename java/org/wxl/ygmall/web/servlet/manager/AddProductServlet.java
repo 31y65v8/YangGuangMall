@@ -22,10 +22,7 @@ import org.wxl.ygmall.exception.AddProductException;
 import org.wxl.ygmall.service.ProductService;
 import org.wxl.ygmall.utils.FileUploadUtils;
 import org.wxl.ygmall.utils.IdUtils;
-/**
- * 后台系统
- * 用于添加商品的servlet
- */
+//添加商品
 public class AddProductServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
