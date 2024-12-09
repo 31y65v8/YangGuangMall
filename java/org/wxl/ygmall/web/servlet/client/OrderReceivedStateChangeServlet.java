@@ -27,7 +27,7 @@ public class OrderReceivedStateChangeServlet extends HttpServlet {
         if (orderid != null && !orderid.trim().isEmpty()) {
             OrderService service = new OrderService();
             try {
-                // 调用业务层方法，更新订单状态为已收货（假设已收货状态为3）
+                // 调用业务层方法，更新订单状态为已收货
                 service.updateState2(orderid);
 
                 // 返回成功的 JSON 响应
