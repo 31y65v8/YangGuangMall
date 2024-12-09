@@ -10,8 +10,6 @@ import javax.servlet.http.HttpSession;
 import org.wxl.ygmall.domain.Product;
 /**
  * 购物车内容变更
- * @author admin
- *
  */
 public class ChangeCartServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -20,11 +18,11 @@ public class ChangeCartServlet extends HttpServlet {
 	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// 1.得到商品id
+		// 得到商品id
 		String id = request.getParameter("id");
-		// 2.得到要修改的数量
+		// 得到要修改的数量
 		int count = Integer.parseInt(request.getParameter("count"));
-		// 3.从session中获取购物车.
+		// 从session中获取购物车.
 		HttpSession session = request.getSession();
 		Map<Product, Integer> cart = (Map<Product, Integer>) session.getAttribute("cart");
 		Product p = new Product();
