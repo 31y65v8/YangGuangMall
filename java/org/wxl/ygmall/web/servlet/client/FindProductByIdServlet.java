@@ -28,12 +28,7 @@ public class FindProductByIdServlet extends HttpServlet {
 					// 调用service层方法，通过id查找商品
 					Product p = service.findProductById(id);
 					request.setAttribute("p", p);
-					// 普通用户默认不传递type值，会跳转到info.jsp页面
-					if (type == null) {
-						request.getRequestDispatcher("/client/info.jsp").forward(request,response);
-						return;
-					}						
-					request.getRequestDispatcher("/admin/products/edit.jsp").forward(request, response);
+					request.getRequestDispatcher("/client/info.jsp").forward(request,response);
 					return;
 				} catch (FindProductByIdException e) {
 					e.printStackTrace();
