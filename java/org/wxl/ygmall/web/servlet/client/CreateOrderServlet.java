@@ -23,12 +23,12 @@ public class CreateOrderServlet extends HttpServlet {
 	}
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// 1.得到当前用户
+		// 得到当前用户
 		HttpSession session = request.getSession();
 		User user = (User) session.getAttribute("user");
-		// 2.从购物车中获取商品信息
+		// 从购物车中获取商品信息
 		Map<Product, Integer> cart = (Map<Product, Integer>)session.getAttribute("cart");
-		// 3.将数据封装到订单对象中
+		// 将数据封装到订单对象中
 		Order order = new Order();
 		try {
 			//获取订单生成页面的参数，receiverName、receiverAddress和receiverMail
@@ -38,7 +38,7 @@ public class CreateOrderServlet extends HttpServlet {
 		} catch (InvocationTargetException e) {
 			e.printStackTrace();
 		}
-		// 设置当前时间为订单时间（ordertime）
+		// 设置当前时间为订单时间
 	    order.setOrdertime(new java.util.Date()); // 当前时间，Date 类型
 		order.setId(IdUtils.getUUID());// 封装订单id
 		order.setUser(user);// 封装用户信息到订单.
@@ -50,7 +50,7 @@ public class CreateOrderServlet extends HttpServlet {
 			order.getOrderItems().add(item);
 		}
 		System.out.println(order);
-		// 4.调用service中添加订单操作.
+		// 调用service中添加订单操作.
 		OrderService service = new OrderService();
 		service.addOrder(order);
 
