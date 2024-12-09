@@ -9,10 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.wxl.ygmall.domain.Product;
 import org.wxl.ygmall.exception.ListProductException;
 import org.wxl.ygmall.service.ProductService;
-/**
- * 后台系统
- * 查询所有商品信息的servlet
- */
+
+ //查询所有商品信息的servlet
 public class ListProductServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
